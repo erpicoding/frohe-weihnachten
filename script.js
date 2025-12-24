@@ -9,7 +9,7 @@ entriesArray.forEach((entry) => {
   let value = entry[1];
 
   if (key == "name") {
-    let name = value.replace("-", " ");
+    let name = value.replaceAll("-", " ");
     nameElement.innerHTML = name;
   }
 });
